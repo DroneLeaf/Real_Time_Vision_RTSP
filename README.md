@@ -17,6 +17,12 @@ sudo apt update
 sudo apt install ffmpeg
 ```
 
+## How to run
+1. Launch the mediamtx server by running `./mediamtx` inside the folder `RTSP_server_mediamtx_v1_11_3`
+2. Run the `Flight_test_everything.py` script by running `python3 Flight_test_everything.py`
+3. Open QGC and change the RTSP server address to `rtsp://192.168.144.6:8554/live/processed_stream`
+4. Yolo detection boxes should be visible in the video stream.
+
 ## Test History
 
 ### Achieved 100FPS GPU and 50FPS CPU
